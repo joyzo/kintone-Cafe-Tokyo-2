@@ -1,0 +1,101 @@
+<div class="timeline-plugin">
+  <h2>SendGridパラメータ設定</h2><br>
+  <div class="block">
+    <label class="kintoneplugin-label">
+        <span id ="container_label">SendGridユーザ名</span>
+        <span class="kintoneplugin-require">*</span>
+    </label>
+    <div class="kintoneplugin-row"></div>
+     <div class="kintoneplugin-input-outer">
+      <input id ="user_param" class="kintoneplugin-input-text"></input>
+     </div>
+  </div>
+  <div class="block">
+    <label class="kintoneplugin-label">
+        <span id ="container_label">SendGridパスワード（Key）</span>
+        <span class="kintoneplugin-require">*</span>
+    </label>
+    <div class="kintoneplugin-row"></div>
+     <div class="kintoneplugin-input-outer">
+      <input id ="key_param" class="kintoneplugin-input-text"></input>
+     </div>
+  </div>
+  <div class="block">
+    <label class="kintoneplugin-label">
+        <span id ="container_label">送信メールアドレス</span>
+        <span class="kintoneplugin-require">*</span>
+    </label>
+    <div class="kintoneplugin-row"></div>
+     <div class="kintoneplugin-input-outer">
+      <input id ="from_param" class="kintoneplugin-input-text"></input>
+     </div>
+  </div>
+
+  <br>
+
+  <h2>フィールドコード設定</h2><br>
+  <div class="block">
+    <label class="kintoneplugin-label">
+      <span id ="container_label">宛先メールアドレスのフィールド</span>
+      <span class="kintoneplugin-require">*</span>
+    </label>
+    <div class="kintoneplugin-row"></div>
+    <div class="kintoneplugin-input-outer">
+      <div class="kintoneplugin-select">
+        <select name="to_code" id="to_code">
+          <option value=""> ----- </option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="block">
+    <label class="kintoneplugin-label">
+      <span id ="container_label">宛先名</span>
+      <span class="kintoneplugin-require">*</span>
+    </label>
+    <div class="kintoneplugin-row"></div>
+    <div class="kintoneplugin-input-outer">
+      <div class="kintoneplugin-select">
+        <select name="to_name_code" id="to_name_code">
+          <option value=""> ----- </option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="block">
+    <label class="kintoneplugin-label">
+      <span id ="container_label">題名（メールタイトル）のフィールド</span>
+      <span class="kintoneplugin-require">*</span>
+    </label>
+    <div class="kintoneplugin-row"></div>
+    <div class="kintoneplugin-input-outer">
+      <div class="kintoneplugin-select">
+        <select name="subject_code" id="subject_code">
+          <option value=""> ----- </option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="block">
+    <label class="kintoneplugin-label">
+      <span id ="container_label">メッセージ本文のフィールド</span>
+      <span class="kintoneplugin-require">*</span>
+    </label>
+    <div class="kintoneplugin-row"></div>
+    <div class="kintoneplugin-input-outer">
+      <div class="kintoneplugin-select">
+        <select name="text_code" id="text_code">
+          <option value=""> ----- </option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="block">
+    <button type="button" id="submit" class="kintoneplugin-button-dialog-ok">     submit     </button>
+    <button type="button" id="cancel" class="kintoneplugin-button-dialog-cancel">     cancel   </button>
+  </div>
+</div>

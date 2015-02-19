@@ -1,0 +1,42 @@
+{
+  "manifest_version": 1,
+  "version": 1,
+  "type": "APP",
+  "name": {
+      "ja": "SendMail プラグイン",
+      "en": "SendMail",
+      "zh": "SendMail"
+  },
+  "description": {
+      "ja": "SendMail プラグイン",
+      "en": "SendMail",
+      "zh": "SendMail"
+  },
+  "icon": "image/icon.png",
+  "homepage_url": {
+      "ja": "https://www.joyzo.co.jp",
+      "en": "https://www.joyzo.co.jp",
+      "zh": "https://www.joyzo.co.jp",
+  },
+  "desktop": {
+      "js": [
+          "https://js.cybozu.com/jquery/2.1.1/jquery.min.js",
+          "js/desktop.js"
+      ],
+      "css": [
+          "css/desktop.css"
+      ]
+  },
+  "config": {
+      "html": "html/config.html",
+      "js": [
+          "https://js.cybozu.com/jquery/2.1.1/jquery.min.js",
+          "js/config.js"
+      ],
+      "css": [
+          "css/51-jp-default.css",
+          "css/config.css"
+      ],
+      "required_params": ["user_param", "key_param", "from_param", "to_code", "to_name_code", "subject_code", "text_code"]
+  }
+}
