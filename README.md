@@ -11,6 +11,30 @@
 
 ![kintone-sendgrid](image/kintone-sendgrid.jpg)
 
+## Download
+```
+$ git clone https://github.com/joyzo/kintone-Cafe-Tokyo-2.git
+```
+
+## Packaging
+```
+$ cd kintone-Cafe-Tokyo-2/plugins/
+$ sh package.sh sendmail/
+
+Plugin ID: lafhjdlhnppkipfcjaedidgfpdhjgjbm
+Plugin file: /home/ubuntu/workspace/kintone-Cafe-Tokyo-2/plugins/plugins/lafhjdlhnppkipfcjaedidgfpdhjgjbm/plugin.zip
+Private key file: /home/ubuntu/workspace/kintone-Cafe-Tokyo-2/plugins/keys/sendmail.lafhjdlhnppkipfcjaedidgfpdhjgjbm.ppk
+```
+
+## Re-packaging
+```
+$ sh package.sh sendmail/  ./plugins/keys/sendmail.lafhjdlhnppkipfcjaedidgfpdhjgjbm.ppk
+
+Plugin ID: lafhjdlhnppkipfcjaedidgfpdhjgjbm
+Plugin file: /home/ubuntu/workspace/kintone-Cafe-Tokyo-2/plugins/plugins/lafhjdlhnppkipfcjaedidgfpdhjgjbm/plugin.zip
+Private key file: /home/ubuntu/workspace/kintone-Cafe-Tokyo-2/plugins/keys/sendmail.lafhjdlhnppkipfcjaedidgfpdhjgjbm.ppk
+```
+
 ## Reference
 * [kintone plugin リファレンス](https://cybozudev.zendesk.com/hc/ja/categories/200219390-kintone-plugin)（cybozu.com developer network内）
 * [kintoneフィールド形式](https://cybozudev.zendesk.com/hc/ja/articles/202166330)（cybozu.com developer network内）
