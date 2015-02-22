@@ -15,6 +15,7 @@
 ```
 $ git clone https://github.com/joyzo/kintone-Cafe-Tokyo-2.git
 ```
+パッケージング用のシェルも含まれていますので、ダウンロード後パッケージングすればすぐにプラグインが得られます。
 
 ## Packaging
 ```
@@ -25,10 +26,14 @@ Plugin ID: lafhjdlhnppkipfcjaedidgfpdhjgjbm
 Plugin file: /home/ubuntu/workspace/kintone-Cafe-Tokyo-2/plugins/plugins/lafhjdlhnppkipfcjaedidgfpdhjgjbm/plugin.zip
 Private key file: /home/ubuntu/workspace/kintone-Cafe-Tokyo-2/plugins/keys/sendmail.lafhjdlhnppkipfcjaedidgfpdhjgjbm.ppk
 ```
+kintoneに読み込むためのプラグインファイルは`plugin.zip`として`plugins`ディレクトリの配下に生成されます。
+
+また、プラグインをアップデート提供するための`key file`は`keys`ディレクトリ配下に生成される。
 
 ## Re-packaging
+1度プラグインIDが採番されたプラグインをアップデート提供するためには、プラグインIDを維持し、パッケージングの際に`key file`を指定する必要があり、プラグインの一意性を保つ必要性があります（これをやらないと読み込み時に新しいプラグインとして認識され、アプリの設定も最初からやり直すことになります）。
 ```
-$ sh package.sh sendmail/  ./plugins/keys/sendmail.lafhjdlhnppkipfcjaedidgfpdhjgjbm.ppk
+$ sh package.sh sendmail/  keys/sendmail.lafhjdlhnppkipfcjaedidgfpdhjgjbm.ppk
 
 Plugin ID: lafhjdlhnppkipfcjaedidgfpdhjgjbm
 Plugin file: /home/ubuntu/workspace/kintone-Cafe-Tokyo-2/plugins/plugins/lafhjdlhnppkipfcjaedidgfpdhjgjbm/plugin.zip
@@ -38,5 +43,6 @@ Private key file: /home/ubuntu/workspace/kintone-Cafe-Tokyo-2/plugins/keys/sendm
 ## Reference
 * [kintone plugin リファレンス](https://cybozudev.zendesk.com/hc/ja/categories/200219390-kintone-plugin)（cybozu.com developer network内）
 * [kintoneフィールド形式](https://cybozudev.zendesk.com/hc/ja/articles/202166330)（cybozu.com developer network内）
+* [Cloud9で開発するkintoneプラグイン](https://www.joyzo.co.jp/blog/454)
 * kintone Café Fukuoka Vol.3 (presentation on Slideshare) [[日本語](http://www.slideshare.net/yamaryu0508b/kintone-caf-vol3kintone-javascriptkintoneproxysendgrid "kintone Café Fukuoka Vol.3 (presentation on Slideshare)")]
 * SendGrid APIドキュメント [[English](https://sendgrid.com/docs/API_Reference/Web_API/mail.html "SendGrid APIドキュメント")]
